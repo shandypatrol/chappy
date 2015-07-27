@@ -14,7 +14,7 @@ Yummy Guacamole
 Via Composer
 
 ``` bash
-$ composer require league/:package_name
+$ composer require shandypatrol/yummy-guacamole
 ```
 
 ## Usage
