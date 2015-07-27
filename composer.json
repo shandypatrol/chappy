@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "League\\Skeleton\\": "src"
+            "ShandyPatrol\\YummyGuacamole\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "League\\Skeleton\\Test\\": "tests"
+            "ShandyPatrol\\YummyGuacamole\\Test\\": "tests"
         }
     },
     "scripts": {
