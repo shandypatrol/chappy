@@ -1,11 +1,10 @@
 {
-    "name": "league/:package_name",
+    "name": "shandypatrol/yummy-guacamole",
     "description": ":package_description",
     "keywords": [
-        "league",
-        ":package_name"
+        "yummy-guacamole"
     ],
-    "homepage": "https://github.com/thephpleague/:package_name",
+    "homepage": "https://github.com/shandypatrol/yummy-guacamole",
     "license": "MIT",
     "authors": [
         {
