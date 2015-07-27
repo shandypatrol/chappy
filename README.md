@@ -43,7 +43,8 @@ If you discover any security related issues, please email :author_email instead 
 
 ## Credits
 
-- [Ben Gibson][https://github.com/ben-gibson]
+- [Ben Gibson](https://github.com/ben-gibson)
+- [Andy Cook](https://github.com/ehimen)
 - [All Contributors][link-contributors]
 
 ## License
