@@ -1,4 +1,4 @@
-# :package_name
+# yummy-guacamole
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
@@ -43,7 +43,7 @@ If you discover any security related issues, please email :author_email instead 
 
 ## Credits
 
-- [:author_name][link-author]
+- [Ben Gibson][https://github.com/ben-gibson]
 - [All Contributors][link-contributors]
 
 ## License
