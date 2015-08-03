@@ -7,42 +7,21 @@
  */
 class Fiends {
 
-    /** @Id @Column(type="integer") @GeneratedValue **/
-    protected $userId;
+    /**
+     * @OneToOne(targetEntity="User")
+     * @JoinColumn(name="userId", referencedColumnName="id")
+     * @Id @Column(type="integer")
+     */
+    private $userId;
+
+    /**
+     * @OneToOne(targetEntity="User")
+     * @JoinColumn(name="friendId", referencedColumnName="id")
+     * @Id @Column(type="integer")
+     */
+    private $friendId;
+
     /** @Column(type="string") **/
-    protected $state;
-
-    /**
-     * @param mixed $state
-     */
-    public function setState($state)
-    {
-        $this->state = $state;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getState()
-    {
-        return $this->state;
-    }
-
-    /**
-     * @param mixed $userId
-     */
-    public function setUserId($userId)
-    {
-        $this->userId = $userId;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getUserId()
-    {
-        return $this->userId;
-    }
-
+    private $state;
 
 } 

@@ -7,10 +7,37 @@
  */
 class Message {
 
+
     /**
-     * @ManyToOne(targetEntity="User", inversedBy="assignedBugs")
+     * @Id @Column(type="integer") @GeneratedValue *
+     */
+    private $id;
+
+    /**
+     * @Column(type="string") *
+     */
+    private $content;
+
+
+    /**
+     * @Column(type="datetime")
      **/
-    protected $users;
+    private $created;
+
+
+    /**
+     * @ManyToOne(targetEntity="User", fetch="LAZY")
+     **/
+    private $users;
+
+
+    /**
+     * Construct method.
+     */
+    public function __construct()
+    {
+        $this->users = new \Doctrine\Common\Collections\ArrayCollection();
+    }
 
 
     /**
@@ -21,54 +48,6 @@ class Message {
     public function getUsers()
     {
         return $this->users;
-    }
-
-
-    /**
-     * @Id @Column(type="integer") @GeneratedValue *
-     */
-    protected $id;
-
-    /**
-     * @Column(type="string") *
-     */
-    protected $content;
-
-    /**
-     * @Column(type="datetime")
-     **/
-    protected $created;
-
-    /**
-     * @param mixed $content
-     */
-    public function setContent($content)
-    {
-        $this->content = $content;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getContent()
-    {
-        return $this->content;
-    }
-
-    /**
-     * @param mixed $id
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getId()
-    {
-        return $this->id;
     }
 
 
