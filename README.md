@@ -45,6 +45,7 @@ If you discover any security related issues, please email :author_email instead 
 
 - [Ben Gibson](https://github.com/ben-gibson)
 - [Andy Cook](https://github.com/ehimen)
+- [Josue De Noia](https://github.com/josudeno)
 - [All Contributors][link-contributors]
 
 ## License
